@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FORM PAGE</title>
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+</head>
+<body>
+       <div id="container">
+            <header>
+                <h1>TO THE NEW</h1>
+                <div>
+                    <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Quick Help</a>
+                    </li>
+                    </ul>
+                </div>
+            </header>
+            <div id="formSection">
+
+            <form class="form">
+            
+                <div id="bugHeading"><h1>Bug Report</h1></div>
+                
+                <div class="Details">
+                    <label>Title:</label> <br> <input type="text" row><br><br>
+                    <label for="Description">Description:</label><br>
+                    <textarea name="Description" cols="45" rows="4"></textarea> <br><br>
+                     <label>Operating systems:</label><br> 
+                    <select>
+                        <option value="Windows XP">Windows XP</option>
+                    </select><br><br>
+                    <label>Product:</label><br>
+                    <select>
+                        <option value="Formoid">Formoid</option>
+                    </select><br><br>
+                    <label>Version:</label> <br> <input type="text"><br><br>
+                    <label for="License">License:</label>
+                    <div class="license">
+                    <input type="radio" name="license" value="Free"><span>Free</span>
+                    <input type="radio" name="license" value="Business"><span>Business</span>
+                    </div>
+                    <br>
+                    <label> Severity:</label><br>
+                    <select>
+                        <option value="Critical">Critical</option>
+                    </select>
+                    <br><br>
+                    <label>Attachments:</label> <br><input type="file" name="file" ><br><br>
+                </div>
+                <footer class="footer">
+                    <button id="button">Send</button>
+                </footer>
+           
+            </form>
+            </div>
+       </div>
+</body>
+</html>

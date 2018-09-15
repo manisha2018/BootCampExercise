@@ -1,0 +1,98 @@
+body {
+    margin: 0px;
+}
+header{
+    margin: 0px auto;
+    border-bottom: 2px solid black;
+    width: 90%;
+
+}
+header h1{
+    margin-left: 1%;
+    text-align: left;
+    color: green;
+}
+header ul{
+    margin-top: -57px;
+    margin-left: 89%;
+    padding: 6px;
+    justify-content: space-between;
+    text-align: right;
+    display: flex;
+}
+header ul li{
+    list-style: none;
+   
+}
+header ul li a{
+    color: cyan;
+    text-decoration: none;
+    text-align: right;
+}
+#formSection{
+    padding: 20px;
+}
+.form{
+    height: 620px;
+    border: 3px solid lightslategray;
+    border-radius: 5px;
+    width: 30%;
+    margin: 0px auto;
+    padding: 20px;
+}
+#bugHeading{
+    outline-style: none;
+    width: 111%;
+    margin-top: -6%;
+    margin-bottom: 3%;
+    background-color: lightslategray;
+    color: white;
+    text-align: left;
+    margin-left: -6%;
+    border-radius: 5px;
+    padding: 1px;
+}
+form input{
+    border-radius: 5px;
+    width: 100%;
+}
+.form textarea{
+    border-radius: 5px;
+    resize:both;
+    overflow:auto;  
+}
+.form select{
+    width: 100%;
+    border-radius: 5px;
+    background-color: lightgreen;
+    color: floralwhite;
+    height: 26px;
+}
+.form .license {
+    display: flex;
+}
+.form .license input{
+    margin-left: -126px;
+}
+.form .license span{
+    margin-left: -182px;
+}
+.footer{
+   
+    height: 53px;
+    margin-top: 0%;
+    background-color: lightslategray;
+    float: right;
+    width: 111%;
+    margin-right: -21px;
+}
+.footer #button{
+    margin-top: 15px;
+    margin-right: 16px;
+    width: 69px;
+    border-radius: 8px;
+    float: right;
+    background-color: lightgreen;
+    padding: 5px;
+    height: 33px;
+}

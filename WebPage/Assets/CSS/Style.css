@@ -1,0 +1,130 @@
+Body{
+    background-color: black;
+    margin: 0px auto;
+    width: 100%;
+}
+#header{
+    padding: 20px;
+    background-color: #191919;
+    margin: 0px auto;
+    width: 90%;
+}
+#header .title h2{
+    color: white;
+    margin-left: 100px;
+    
+}
+#header #main-nav{
+    padding: 20px 0px;
+    background-color: black;
+    width: 960px;
+    margin: 0px auto 10px auto;
+}
+#main-nav ul{
+    display: flex;
+    /* justify-content: space-between; */
+}
+#header #main-nav ul li {
+    text-align: right;
+    /* text-decoration: none; */
+    list-style: none;
+    margin: 0px 10px;
+}
+#header #main-nav ul li a {
+    font-size: 1.4em;
+    color:white;
+}
+#container .midSection{
+    padding: 20px;
+    background-color: white;
+    width: 90%;
+    margin: 0px auto;
+}
+
+.midSection .box{
+    margin: 0px auto;
+    margin-top: 20px;
+    width: 960px;
+    height: 360px;
+    background-color:black;
+    justify-content: center;
+}
+.midSection .box p{
+    margin: 0 auto;
+    padding-top: 168px;
+    padding-right: 100px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    font-size: 45px;
+}
+.midSection .content{
+    background-color: lightgrey;
+    padding: 19px;
+    width: 921px;
+    margin-top: 2%;
+    margin-left: 8.5%;
+}
+.midSection .content p{
+    /* width: 960px; */
+    /* margin: 0px auto; */
+    text-align: justify;
+    
+}
+#gallery .heading{
+    width: 960px;
+    margin: 0px auto;
+    text-align: left;
+}
+#gallery .heading h4{
+    border-bottom: solid black;
+    padding: 10px;
+}
+
+
+#index-gallery{
+    width:960px;
+    padding: 20px;
+    width: 960px;
+    margin: 0px auto;
+    display:flex;
+    padding:10px;
+}
+
+.row{
+    width:215px;
+    text-align:center;
+    display:flex;
+    background-color: transparent;
+    margin:10px;
+}
+  
+.row .col{
+    border: 2px solid black;
+    margin: 8px;
+}
+
+.row .col .overlay{
+    width: 193px;
+    text-align: center;
+    padding: 11px;
+    background-color: lightgrey;
+    /* text-decoration: none; */
+}
+.row .col .overlay a{
+    text-decoration: none;
+    color: black;
+}
+
+footer{
+    width: 89%;
+    margin: 0px auto;
+    background-color: #191919;
+    padding: 27px;
+    color: white;
+}
+.footerLeft{
+    text-align: left;
+    padding-left: 40px;
+    padding-right: 40px;
+}
