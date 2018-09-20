@@ -1,0 +1,36 @@
+<!-- Get dropdown selected value on onchange event and append in div container -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#selector').on('change', function () {
+                var el = "<p>" + $("#selector").val() + "</p>";
+                $("#container").append(el);
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <select id="selector">
+        <option value="volvo">volvo</option>
+        <option value="saab">Saab</option>
+        <option value="opel">Opel</option>
+        <option value="audi">Audi</option>
+    </select>
+
+
+    <div id="container"></div>
+</body>
+
+</html>

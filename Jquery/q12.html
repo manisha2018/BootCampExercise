@@ -1,0 +1,48 @@
+<!-- We have bind a click funtion to parent div but we want stop it from performing when user clicks on its child li -->
+
+<html>
+
+<head>
+    <script src="./jquery-3.3.1.min.js"></script>
+    <style>
+        div {
+            display: block;
+            padding: 10px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="grandParent">
+        C
+        <div class="parent">
+            B
+            <div class="child">
+                A
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+
+    // make the .parent react
+    $('.grandParent').on('click', function () {
+        alert('Grand Parent: You hit me, my child or my grand child, now deal with me!');
+    });
+
+    // make the .parent react
+    $('.parent').on('click', function () {
+        alert('Parent : Don\'t you dare hitting me or my child, again!');
+    });
+
+    // make the child cry, when we hit him.
+    $('.child').on('click', function (e) {
+        // let the child do his thing, but don't let his ancestors be informed that we hit their child
+        e.stopPropagation();
+        alert('Child : waaaaaa waaaa waa huh huh waaa waaaa!');
+    });
+</script>
+</html>

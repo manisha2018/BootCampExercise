@@ -1,0 +1,53 @@
+<!-- 16. Add cross button on row and bind click function which make a delete request to server, after success event remove the row from dom
+ -->
+
+<html>
+
+<head>
+    <script src="./jquery-3.3.1.min.js">
+
+
+
+    </script>
+</head>
+
+<body>
+    <table class="tbn">
+        <tr>
+            <td>January</td>
+            <td>100</td>
+            <td> <input type="button" value="click here to delete this row" /></td>
+        </tr>
+
+
+        <tr>
+            <td>February</td>
+            <td>80</td>
+            <td> <input type="button" value="click here to delete this row" /></td>
+        </tr>
+        <tr>
+            <td>March</td>
+            <td>8</td>
+            <td> <input type="button" value="click here to delete this row" /></td>
+        </tr>
+        <script>
+            $('table').on('click', 'input[type="button"]', function (e) {
+                var n = e.target;
+                $.ajax({
+                    type: "GET",
+
+                    url: "https://www.reqres.in/api/users/2",
+                    success: function (result) {
+                        console.log($(this));
+                        n.closest('tr').remove();
+                    }
+
+                })
+
+            });
+
+        </script>
+    </table>
+</body>
+
+</html>

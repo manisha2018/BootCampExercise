@@ -1,0 +1,29 @@
+<!-- Retrive the data from server using ajax get call -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="./jquery-3.3.1.min.js"></script>
+	<script>
+		$(document).ready(function () {
+
+			$('#ajaxBtn').click(function () {
+
+				$.get('/jquery/getjsondata', 
+				{ name: 'manisha' }, 
+				function (data, textStatus, jqXHR) {
+					$('p').append(data.firstName);
+				});
+			});
+		});
+	</script>
+</head>
+<body>
+	<h1> jQuery get() method demo
+	</h1>
+	<input type="button" id="ajaxBtn" value="Send GET request" />
+	<p>
+	</p>
+</body>
+
+</html>

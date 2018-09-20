@@ -1,0 +1,39 @@
+<!-- Get the max height of elements using jquery each method -->
+
+<html>
+<head>
+    <script src="./jquery-3.3.1.min.js">
+    </script>
+</head>
+<body>
+    <div>
+        <div class="panel">
+            Line 1
+            Line 2 <br>
+        </div>
+        <div class="panel">
+            Line 1
+            Line 2
+            Line 3
+            Line 4<br>
+        </div>
+        <div class="panel">
+            Line 1 <br>
+        </div>
+        <div class="panel">
+            Line 1
+            Line 2
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            var maxHeight = 0;
+            $(".panel").each(function () {
+                maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+            });
+            console.log(maxHeight);
+        });
+    </script>
+</body>
+
+</html>

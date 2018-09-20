@@ -1,0 +1,20 @@
+<!-- After page load change the HTML of div element with "p" element -->
+
+<html>
+<head>
+    <script src="./jquery-3.3.1.min.js">
+    </script>
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            $("div").click(function(){
+                $(this).replaceWith("<p>" + $( this ).html() + "</p>");
+            });
+       });
+    </script>
+<div id="testClass">
+    <button>click this and div will convert into p !</button>
+</div>
+</body>
+</html>

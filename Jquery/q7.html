@@ -1,0 +1,23 @@
+<!-- Bind a click function to an "click" element and append next "click" next to it. -->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script src="./jquery-3.3.1.min.js"></script>
+        <script>
+        $(document).ready(function() {
+            $(".parent").on('click', function () {
+                // $(".parent").click(function () {
+                    $(".parent").append("<input type='button' id='clickOnthis' value='click'>");
+               // });
+            });
+        });
+        </script>
+</head>
+<body>
+    <div class="parent"><input type="button" id="clickOnthis" value="click"></div>
+</body>
+</html>

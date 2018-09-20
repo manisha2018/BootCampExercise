@@ -1,0 +1,28 @@
+<!-- Change color of every cell which has numberl larger than 10. -->
+
+<html>
+<head>
+    <script src="./jquery-3.3.1.min.js"></script>
+<style>
+.cell1 { border:1px solid black; background:#eee; padding:10px; }
+</style>
+</head>
+<body>
+<table>
+<tr>
+<td class="cell1">20</td>
+<td class="cell1">5</td>
+<td class="cell1">1</td>
+<td class="cell1">3</td>
+<td class="cell1">10</td>
+<td class="cell1">15</td>
+</tr>
+</table>
+</body>
+
+<script>
+$('.cell1').each(function(i, n) {
+   if($(n).text() > 10) $(n).css('background', 'red');
+});
+</script>
+</html>

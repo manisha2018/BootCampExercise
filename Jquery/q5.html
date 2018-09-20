@@ -1,0 +1,25 @@
+<!-- Change the font size of ".target" which has parent element with id name "#main" -->
+
+<html>
+
+<head>
+    <script src="./jquery-3.3.1.min.js">
+
+    </script>
+</head>
+
+<body>
+    <div id="main">
+        <button>This ia Parent Element</button>
+        <div class="target">This is Child Element:Click Me!</div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("#main").click(function () {
+                $("div>div").css("font-size", "100px");
+            });
+        });
+    </script>
+</body>
+
+</html>
